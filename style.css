@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    background-color: #292b2d;
+    color: white;
+    padding: 0 100px;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li {
+    transition: all 0.5s;
+}
+
+nav ul li:hover {
+    color: #00abb3;
+    cursor: pointer;
+    text-shadow: 2px 2px 30px #00abb3;
+    transition: all 0.5s;
+}
+
+nav h1 {
+    font-size: 35px;
+
+}
+
+nav button {
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 60px;
+    color: white;
+    background-image: linear-gradient(45deg,
+            #fa8bff 0%,
+            #2bd2ff 52%,
+            #2bff88 90%);
+}
+
+/* Slogan */
+
+.hero {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slogan {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slogan h1 {
+    font-size: 90px;
+    line-height: 90px;
+}
+
+.slogan h1 span {
+    color: #00abb3;
+}
+
+.desc {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.desc a {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-image: linear-gradient(45deg,
+            #fa8bff 0%,
+            #2bd2ff 52%,
+            #2bff88 90%);
+}
+
+.desc a:hover{
+    background-image: linear-gradient(45deg,
+            #2bff88 0%,
+            #2bd2ff 52%,
+            #fa8bff 90%);
+
+            transition: all 0.5s;
+}
+
+
+.desc p {
+
+    font-weight: 500;
+    width: 400px;
+}
+
+.hero img {
+    width: 900px;
+    height: 450px;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes move {
+    0%{margin-bottom: 0px;}
+    50%{margin-bottom: 50px}
+    100%{margin-bottom: 0px;}
+}
+
+/* Ana içerik */
+
+.markalar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+@media (min-width:1500px) {
+    .markalar {
+        margin-top: 200px;
+    }
+}
+
+/* Drops kutucugu*/
+
+.drops {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.drops h1 {
+    font-size: 40px;
+}
+
+.drops ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.drops ul li {
+    background-color: gray;
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.cards {
+    max-width: 900px;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+/* kart */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    width: 260px;
+    padding: 20px;
+}
+
+.card h3 {}
+
+.card img {
+    width: 100%;
+}
+
+.value {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left img {
+    width: 20px;
+}
+
+.left p {
+    color: #00abb3;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.time p{
+    background-color: rgb(189, 189, 189);
+    color: #00abb3;
+    padding: 6px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.time button{
+    background-color:white;
+    border: none;
+    color: #00abb3;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s;
+    
+}
+.time button:hover{
+    background-color: #00abb3;
+    color: aliceblue;
+    transition: all 0.5s;
+}
+.add{
+    margin: -10-20;
+    width: 90vw;
+    min-height: 150px;
+    background-color: #00abb3;
+    margin-top: 200px;
+    font-size: 136px;
+    line-height: 146px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 20px;
+    font-weight: 800;
+    white-space: nowrap;
+    transform: rotate(-6deg);
+    text-shadow: 2px 2px 39px rgba(255, 255, 255, 0.74);
+}
+
+.infos1{
+    margin-top: 300px;
+    min-width: 600px;
+    min-height: 600px;
+}
+.infos1 h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.info1{
+    display: flex;
+    gap: 20px;
+    border: 1px solid #292b2d;
+}
+.info-text{
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 200px;
+    background-color: rgb(53, 3, 97);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.info-text img{
+    width: 35px;
+}
+.info-text h1{
+    font-size: 30px;
+}
+.info-text p{
+
+}
+
+footer{
+    max-width: 1200px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+footer p{
+    text-align: justify;
+}
